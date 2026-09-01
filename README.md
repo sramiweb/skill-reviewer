@@ -64,9 +64,24 @@ The skill returns a structured audit report:
 
 ## Examples
 
-See `examples/` directory for:
-- `compliant-skill/SKILL.md` — a fully compliant skill
-- `non-compliant-skill/SKILL.md` — a skill with common issues
+The `examples/` directory contains:
+
+| Example | Purpose |
+|---------|---------|
+| `compliant-skill/SKILL.md` | Fully compliant skill structure (all 6 rules PASS) |
+| `non-compliant-skill/SKILL.md` | Intentional violations for learning (R3, R4, R5, R6) |
+| `skill-creator-reference/SKILL.md` | skill-creator v1.4.0 as reference for creating new skills |
+
+Use `compliant-skill` as a reference for what a correct skill looks like.
+Use `non-compliant-skill` to see what violations look like when audited.
+Use `skill-creator-reference` to create new skills from scratch.
+
+## Workflow complet
+
+1. **Cré«« un skill** → utilise `skill-creator` (dans `examples/skill-creator-reference/`)
+2. **Valide le skill** → utilise `skill-reviewer` (ce repo)
+3. **Itre** → corrige les CRITICAL/WARNING signals
+4. **Rutilise** → installe globalement pour tous tes projets
 
 ## License
 
